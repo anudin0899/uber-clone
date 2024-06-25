@@ -42,7 +42,7 @@ const CheckoutForm = ({ amount }) => {
             clientSecret,
             elements,
             confirmParams: {
-                return_url: 'http://localhost:3000/payment-confirm', // Adjust this as needed
+                return_url: 'https://uber-clone-taupe.vercel.app/payment-confirm', // Adjust this as needed
             },
         });
 
