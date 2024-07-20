@@ -20,9 +20,9 @@ export default function Home() {
       <DestinationContext.Provider value={{ destination, setDestination }}>
         <div>
           <Header />
-          <div className='mb-6'>
-            <Image src='/banner-6.png' alt='banner' width={900} height={400} className="w-full h-[400px]" />
-          </div>
+          // <div className='mb-6'>
+          //   <Image src='/banner-6.png' alt='banner' width={900} height={400} className="w-full h-[400px]" />
+          // </div>
           <LoadScript libraries={['places']} googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_API_KEY}>
             <div className="p-6 grid grid-cols-1 md:grid-cols-3 gap-5">
               <div>
