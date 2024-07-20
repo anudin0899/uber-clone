@@ -94,7 +94,7 @@ const GoogleMapSection = () => {
     })
   }
 
-  console.log(center, "center");
+ 
 
   return (
     <GoogleMap

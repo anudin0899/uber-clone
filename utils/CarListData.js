@@ -5,7 +5,7 @@ export const CarListData = [
         seat: 4,
         desc: 'Affordabel, Evertday rides',
         amount: 1.1,
-        image: '/Uber1.jpg'
+        image: 'Uber1.jpg'
     },
     {
         id: 2,
@@ -13,7 +13,7 @@ export const CarListData = [
         seat: 4,
         desc: 'Affordabel, Evertday rides',
         amount: 1.5,
-        image: '/Uber2.jpg'
+        image: 'Uber2.jpg'
     },
     {
         id: 3,
@@ -21,7 +21,7 @@ export const CarListData = [
         seat: 4,
         desc: 'Newer cars with extra legroom',
         amount: 0.9,
-        image: '/Uber3.jpg'
+        image: 'Uber3.jpg'
     },
     {
         id: 4,
@@ -29,6 +29,6 @@ export const CarListData = [
         seat: 4,
         desc: 'Comfort, Evertday rides',
         amount: 1.3,
-        image: '/Uber4.jpg'
+        image: 'Uber4.jpg'
     }
 ]
