@@ -1,10 +1,15 @@
-
+"use client"
 import React from 'react'
 import { CarFront, PackageOpen } from 'lucide-react';
 import Image from 'next/image';
-import { UserButton } from '@clerk/nextjs';
+import { UserButton, useUser } from '@clerk/nextjs';
+import Link from 'next/link';
+import { Button } from './ui/button';
 
 const Header = () => {
+
+
+    const { user, isSignedIn, isLoaded } = useUser();
 
     const headerMenu = [
         {
@@ -26,8 +31,9 @@ const Header = () => {
                 <Image
                     src='/Uber-Logo.png'
                     alt='logo'
-                    width={70}
+                    width={100}
                     height={70}
+                    className='cursor-pointerr w-[80px] h-[50px]'
                 />
 
                 <div className='flex gap-6 items-center'>
@@ -40,7 +46,12 @@ const Header = () => {
                     ))}
                 </div>
             </div>
-            <UserButton />
+            {isSignedIn ? <UserButton /> :
+                <Link href={'sign-in'}>
+                    <Button>Get Started</Button>
+                </Link>
+            }
+
         </div>
     )
 }
