@@ -7,7 +7,7 @@ const CarListItem = ({ car, dist }) => {
         <div>
             <div className='flex items-center justify-between '>
                 <div className='flex items-center gap-4'>
-                    <Image src={car.image} width={100} height={100} />
+                    <Image src={car.image} width={100} height={100} alt="car-image"/>
                     <div>
                         <h2 className='font-semibold text-[16px] flex gap-3'>
                             {car.name}
